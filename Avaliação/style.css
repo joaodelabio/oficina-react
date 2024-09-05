@@ -1,3 +1,5 @@
+/* reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,90 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+}
+
+/* telas grandes */
+
+@media (min-width: 1200px) {
+    .conteudo-header {
+        max-width: 60%;
+    }
+
+    #home .conteudo,
+    #produtos .container {
+        max-width: 60%;
+    }
+}
+
+/* telas médias */
+
+@media (min-width: 851px) and (max-width: 1200px) {
+    .conteudo-header {
+        max-width: 80%;
+    }
+
+    #home .conteudo,
+    #produtos .container {
+        max-width: 80%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin-left: 15%;
+    }
+}
+
+/* telas pequenas */
+
+@media (max-width: 850px) {
+    .conteudo-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .produto-lista {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #home .conteudo,
+    #produtos .container {
+        overflow: auto; /*  */
+        max-width: 80%;
+        padding: 2%;
+    }
+
+    .produto-item {
+        max-width: 80%;
+        padding: 5%;
+        font-size: 0.9em;
+    }
+
+    .produto-item img {
+        max-width: 80%;
+    }
+
+    footer {
+        margin-top: 3em;
+        padding: 10 0px;
+    }
 }
 
 header {
@@ -99,7 +185,8 @@ footer {
     background-color: #333;
     color: #fff;
     margin-top: 10em;
-    bottom: 0;
+    position: relative;
+    clear: both;
 }
 
 footer p {
