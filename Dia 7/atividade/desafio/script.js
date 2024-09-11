@@ -1,2 +1,4 @@
 const meuButao = document.getElementById("seubutao");
-meuButao.addEventListener("click");
+meuButao.addEventListener("click", () => {
+    document.body.style.backgroundColor = "red";
+});

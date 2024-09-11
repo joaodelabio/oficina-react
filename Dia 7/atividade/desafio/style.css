@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 15%;
+}
+
+button {
+    background-color: goldenrod;
+    color: black;
+    border-radius: 20%;
+    padding: 14px 20px;
+    cursor: pointer;
+    width: 10%;
+}
