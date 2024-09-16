@@ -2,9 +2,9 @@ let corAtual = 0;
 const interval = 2000;
 
 function mudarCor() {
-    const vermelho = document.getElementById('vermelho');
+    const vermelho = document.getElementById('verde');
     const amarelo = document.getElementById('amarelo');
-    const verde = document.getElementById('verde');
+    const verde = document.getElementById('vermelho');
 
     vermelho.classList.remove('ativo');
     amarelo.classList.remove('ativo');
