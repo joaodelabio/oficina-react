@@ -46,16 +46,17 @@ calculadora.soma()
 
 */
 
-/* classe retangulo */
+/* classe retangulo 
 
 function retangulo (largura, altura) {
     this.largura = largura,
     this.altura = altura
-}; 
+
+    calculararea = function() {
+        console.log(largura * altura);
+    };
+} 
 
 const bunda = new retangulo(20, 60);
-
-function calculararea () {
-
-}
-
+calculararea(bunda);
+*/
