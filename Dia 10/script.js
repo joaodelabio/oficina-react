@@ -60,3 +60,31 @@ function retangulo (largura, altura) {
 const bunda = new retangulo(20, 60);
 calculararea(bunda);
 */
+
+/* conta bancaria */
+
+function contaBancaria (titular, saldo) {
+    this.titular = titular,
+    this.saldo = saldo,
+    this.deposito = function(valor) {
+
+        this.saldo += valor
+        console.log(`voce fez R$${valor} no tigrinho e seu saldo atual é de R$${this.saldo}.`)
+    },
+
+    this.saque = function(valor) {
+
+        if (this.saldo >= valor) {
+            this.saldo -= valor
+            console.log(`voce perdeu R$${valor} no fortune rabbit demo bbc e agora tem um total de  ${this.saldo} putos no bolso. parabéns.`)
+        } else {
+            console.log('nao tem dinheiro, pobre.')
+        }
+    }
+};
+
+const felipinho = new contaBancaria('felipinho porra games', 2000);
+const pedro2 = new contaBancaria('pedro2', 500);
+const marselo = new contaBancaria('marselo', 100000000);
+
+pedro2.saque(500);
