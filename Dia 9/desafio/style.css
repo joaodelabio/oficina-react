@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.predio {
+    position: relative;
+    width: 100px;
+    height: 400px;
+    border: 2px solid #333;
+    background-color: #ddd;
+    margin-right: 700px;
+}
+
+.elevador {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background-image: url('KKKK.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    bottom: 0; /* pra começar dentro do predio */
+    transition: bottom 2s ease-in-out;
+}
+
+.andar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 98.7px; /* risquinho safado q tava sobrando  */
+    border-bottom: 2px solid #333;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes button {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+}
+
+.botoes button:hover {
+    background-color: #45a049;
+}
+
+.botoes button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px); /* nao faco ideia */
+}

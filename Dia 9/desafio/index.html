@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elevador dos cria do react</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>elevador kkkkkkkkkkkkk</p>
+    <div class="container">
+        <div class="predio">
+            <div class="andar"></div>
+            <div class="andar"></div>
+            <div class="andar"></div>
+            <div class="andar"></div>
+            <div class="elevador" id="elevador"></div>
+        </div>
+        <div class="botoes">
+            <button class="botao-elevador" onclick="moverElevador(3)">3</button>
+            <button class="botao-elevador" onclick="moverElevador(2)">2</button>
+            <button class="botao-elevador" onclick="moverElevador(1)">1</button>
+            <button class="botao-elevador" onclick="moverElevador(0)">Sobradinho</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
