@@ -9,6 +9,7 @@ for (let multiplos = 0; multiplos < lista.length; multiplos++) {
         console.log(lista[multiplos]);
     }
 }
+
 */
 
 /* Crie uma lista com 10 elementos e uma nova lista que contenha apenas os
@@ -21,6 +22,7 @@ for (let maiores = 0; maiores < lista.length; maiores++) {
         console.log(lista[maiores]);
     }
 }
+
 */
 
 /* Crie uma lista de inteiros com 10 elementos. Calcule e imprima a soma dos
@@ -35,15 +37,59 @@ for (let pares = 0; pares < lista.length; pares++) {
     }
 }
 console.log(somaPares);
+
 */
 
 /* Crie uma função que receba uma lista de inteiros e retorne a média aritmética
-dos valores. */
+dos valores.
 
+function media(lista) {
 
+    let soma = 0;
+    for (let i = 0; i < lista.length; i++) {
+        soma += lista[i];
+    }
+    return soma / lista.length;
+}
+
+let inteiros = [5, 10, 15];
+console.log(media(inteiros));
+
+*/
 
 /* Crie um objeto chamado Pessoa com os campos "nome", "idade" e "endereço". O
 campo "endereço" deve ser um outro objeto com os campos "rua", "número",
 "cidade" e "estado". Escreva uma função que receba uma Pessoa como parâmetro e
-imprima seu endereço completo. */
+imprima seu endereço completo.
 
+function Pessoa (nome, idade, endereco) {
+    this.nome = nome,
+    this.idade = idade,
+    this.endereco = endereco
+};
+
+const enderecoJoaofera = {
+    rua: "fera",
+    numero: 25,
+    cidade: "sobradinho",
+    estado: "morto"
+};
+
+const enderecoVilmar = {
+    rua: "testo-alta",
+    numero: 69,
+    cidade: "biofarma",
+    estado: "peitao"
+};
+
+const vilmar = new Pessoa("vilmar", "70", enderecoVilmar)
+const joaofera = new Pessoa("joaofera", "19", enderecoJoaofera)
+
+function enderecoPessoa (pessoa) {
+    const enderecoCompleto = `${pessoa.endereco.rua}, ${pessoa.endereco.numero}, ${pessoa.endereco.cidade}, ${pessoa.endereco.estado}`;
+    console.log(enderecoCompleto)
+};
+
+enderecoPessoa(vilmar);
+
+*/
