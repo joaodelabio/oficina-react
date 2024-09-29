@@ -1,0 +1,1 @@
+/* filtrar primos entre 2 elementos de um array. -> [10, 40], retornar primos de 10 a 40. */
