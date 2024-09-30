@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+.dados-aluno {
+    border: 1px solid black;
+    background: lightgray;
+    margin-top: 50px;
+}
+
+#nome {
+    text-align: center;
+}
+
+#nota {
+    text-align: center;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 500px;
+    height: 100px;
+    border: 1px solid black;
+    background: lightgray;
+}
+
+#aprovado {
+    padding: 5px 5px 5px;
+}
+
+#recuperacao {
+    padding: 5px 5px 5px;
+}
+
+#reprovado {
+    padding: 5px 5px;
+}
