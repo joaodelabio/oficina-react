@@ -34,3 +34,7 @@
     margin: 5px;
     width: 100%;
 }
+
+#seubutao:hover {
+    background-color: rgb(136, 129, 129);
+}
