@@ -6,7 +6,7 @@ export default function Header () {
             <div id="header">
                 <h1>Monitoria react</h1>
                 <p>
-                    <a href ="https://youtu.be/hLNGmVnnznw?si=Lsa7HO8eLOI5Np5B" target="_blank">zap do pedrao</a>
+                    <a href ="https://youtu.be/J5eEg4GeSBI?si=ZqE64vNYDle-B4SN" target="_blank">zap do pedrao</a>
                 </p>
             </div>
         </header>
