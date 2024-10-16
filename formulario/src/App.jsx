@@ -1,13 +1,12 @@
 import './App.css'
-import Header from './components/Header'
-import Form from './components/Form'
+import Cadastro from './views/cadastro'
+import Login from './views/login'
 
 function App() {
 
   return (
     <>
-    <Header/>
-    <Form/>
+    <Cadastro/>
     </>
   )
 }

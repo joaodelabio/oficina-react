@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#div-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 10%;
+    margin-left: 38%;
+    width: 25%;
+    padding: 20px;
+}
+
+#cadastro-tela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 10%;
+}
+
+#nome, #email, #password2, #numero, #endereco, #seubutao2 {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+}
+
+#seubutao2{
+    margin-top: 10%;
+}
+
+#seubutao2:hover {
+    background-color: rgb(136, 129, 129);
+}
